@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.pyp": "python",
+        "*.res": "cpp"
+    }
+}
