@@ -141,6 +141,9 @@ class connectiongridData(c4d.plugins.ObjectData):
             lastIn = compZ(lastIn, endSpacer, points)
 
         spline = c4d.SplineObject(len(points), c4d.SPLINETYPE_LINEAR)
+        spline[c4d.SPLINEOBJECT_INTERPOLATION] = 1 # natural
+        spline[c4d.SPLINEOBJECT_SUB] = 8
+        
         for x in range(len(points)):
             spline.SetPoint(x, points[x])
 
